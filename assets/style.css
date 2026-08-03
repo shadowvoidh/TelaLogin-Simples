@@ -1,0 +1,299 @@
+/* --- @shadow_voidh --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f5f9;
+  }
+  
+  /* --- CONTAINER PRINCIPAL --- */
+  .login-container {
+    display: flex;
+    width: 1000px;
+    max-width: 95%;
+    height: 600px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* --- PAINEL ESQUERDO (ILUSTRAÇÃO E ROXO) --- */
+  .left-panel {
+    flex: 1;
+    background: linear-gradient(135deg, #7b2cbf 0%, #6a0dae 100%);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  /* Formas Decorativas Orgânicas (Ondas) */
+  .shape-top {
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    width: 200px;
+    height: 200px;
+    background-color: #0000;
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    opacity: 0.8;
+  }
+  
+  /* Ilustração Isométrica Simulada */
+  .illustration-wrapper {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+  
+  .monitor-frame {
+    width: 220px;
+    height: 240px;
+    background: #ffffff;
+    border-radius: 12px;
+    border: 4px solid #3f37c9;
+    box-shadow: -10px 10px 0px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transform: rotate(-5deg) skew(-5deg);
+  }
+  
+  .browser-header {
+    background-color: #e9ecef;
+    padding: 6px 10px;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .url-bar {
+    font-size: 10px;
+    color: #6c757d;
+    background: #fff;
+    padding: 2px 8px;
+    border-radius: 4px;
+  }
+  
+  .browser-body {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+  }
+  
+  .lock-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .lock-icon {
+    width: 48px;
+    height: 48px;
+    color: #4cc9f0;
+  }
+  
+  .input-placeholder {
+    width: 80px;
+    height: 10px;
+    background-color: #4895ef;
+    border-radius: 4px;
+  }
+  
+  .input-placeholder.dots {
+    background-color: #3f37c9;
+    color: #fff;
+    font-size: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+  }
+  
+  /* --- PAINEL DIREITO (FORMULÁRIO DE LOGIN) --- */
+  .right-panel {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #ffffff;
+  }
+  
+  /* Ícone do Avatar Superior */
+  .avatar-circle {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #e9ecef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  .avatar-icon {
+    width: 45px;
+    height: 45px;
+    color: #7b2cbf;
+  }
+  
+  .login-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #6c757d;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+  }
+  
+  /* Formulário */
+  .login-form {
+    width: 100%;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .input-group {
+    position: relative;
+    width: 100%;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 12px 40px 12px 18px;
+    border-radius: 25px;
+    border: 1px solid transparent;
+    background-color: #e9ecef;
+    font-size: 12px;
+    color: #495057;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .input-group input::placeholder {
+    color: #adb5bd;
+    font-weight: 500;
+  }
+  
+  .input-group input:focus {
+    background-color: #fff;
+    border-color: #7b2cbf;
+    box-shadow: 0 0 5px rgba(123, 44, 191, 0.2);
+  }
+  
+  .input-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    color: #6c757d;
+    pointer-events: none;
+  }
+  
+  /* Opções de Radio / Checkbox */
+  .options-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0 15px 0;
+  }
+  
+  .radio-label {
+    font-size: 11px;
+    color: #6c757d;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .radio-label input[type="radio"] {
+    accent-color: #7b2cbf;
+    cursor: pointer;
+  }
+  
+  /* Botão de Login */
+  .btn-login {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #7b2cbf 0%, #5a189a 100%);
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(123, 44, 191, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .btn-login:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(123, 44, 191, 0.4);
+  }
+  
+  /* Rodapé / Copyright */
+  .copyright {
+    position: absolute;
+    bottom: 15px;
+    font-size: 9px;
+    color: #adb5bd;
+    text-align: center;
+  }
+  
+  /* ONDA DECORATIVA NO CANTO INFERIOR DIREITO */
+  .right-panel::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 120px;
+    height: 80px;
+    background-color: #7b2cbf;
+    border-top-left-radius: 100px;
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  /* Ajusta copyright para ficar acima da onda */
+  .copyright {
+    z-index: 2;
+  }
+  
+  /* --- RESPONSIVIDADE PARA CELULARES --- */
+  @media (max-width: 768px) {
+    .login-container {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .left-panel {
+      display: none; 
+    }
+  
+    .right-panel {
+      padding: 40px 20px;
+    }
+  }
