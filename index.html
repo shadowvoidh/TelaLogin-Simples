@@ -10,9 +10,19 @@
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
+<!--/////////////////////
+Leave it alone, that's art. (@shadow_voidh)
+\\\\\\\\\\\\\\\\\\\\\\--> 
+
+
+
 
   <div class="login-container">
     
+<!--/////////////////////
+Painel Esquerdo
+\\\\\\\\\\\\\\\\\\\\\\--> 
+
     <div class="left-panel">
       <div class="shape shape-top"></div>
       <div class="shape shape-bottom"></div>
@@ -27,7 +37,7 @@
               <i data-lucide="lock" class="lock-icon"></i>
               <div class="input-placeholder"></div>
               <div class="input-placeholder dots">Shadow_Voidh</div>
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcY4cjMOp7jz5Hdodvmi5YCHNc6qSpkUBNyjpHYe1-2w&s">
+              <img src="assets/shadow.jfif" alt="Shadow Illustration">
             </div>
           </div>
         </div>
@@ -35,41 +45,54 @@
       </div>
     </div>
 
+<!--/////////////////////
+Painel Direito
+\\\\\\\\\\\\\\\\\\\\\\--> 
+
     <div class="right-panel">
-      
+      <!-- Avatar -->
       <div class="avatar-circle">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnzIDahqCxchbkL66kzzqQ6s698IlgiAoYykcBEyuo0nlSIADCtpbL5wAG&s=10" height="120px">
+        <img src="assets/avatar.jfif" height="120px" alt="User Avatar">
       </div>
-
+      <!-- User -->
       <h1 class="login-title">USER LOGIN</h1>
-
-      <form class="login-form">
-        <div class="input-group">
-          <input type="text" placeholder="Gmail" required >
-          
-        </div>
-
-      <form class="login-form">
+      <!-- Login -->
+      <form id="loginForm" class="login-form" novalidate>
+    <div class="input-group">
+    <!-- Gmail -->
+    <input type="email" id="emailInput" placeholder="Seu e-mail..." required>
+    <span class="error-message" id="emailError"></span>
+     <i data-lucide="mail" class="input-icon"></i>
+    </div>
+    
+        <!-- CAMPO USERNAME -->
         <div class="input-group">
           <input type="text" placeholder="USERNAME" required>
           <i data-lucide="user" class="input-icon"></i>
         </div>
 
+        <!-- CAMPO PASSWORD -->
         <div class="input-group">
-          <input type="password" placeholder="PASSWORD" required>
-          <i data-lucide="lock" class="input-icon"></i>
+          <input type="password" id="passwordInput" placeholder="PASSWORD" required>
+          <button type="button" id="togglePassword" class="toggle-password-btn" aria-label="Mostrar senha">
+            <i data-lucide="eye" id="eyeIcon"></i>
+          </button>
         </div>
 
+        <!-- OPÇÕES -->
         <div class="options-group">
           <label class="radio-label">
-            <input type="radio" name="remember" checked>
+            <input type="checkbox" name="remember" checked>
             <span class="custom-radio"></span>
             Remember me
           </label>
-
         </div>
 
-        <button type="submit" class="btn-login">LOGIN</button>
+        <!-- BOTÃO -->
+        <button type="submit" id="btnLogin" class="btn-login">
+  <span id="btnText">ENTRAR</span>
+  <i id="btnSpinner" data-lucide="loader-2" class="spinner-icon hidden"></i>
+      </button>
       </form>
 
       <p class="copyright">© 2026 LOGIN WORLDWIDE DESIGN BY SHADOW_VOIDH.</p>
@@ -77,8 +100,15 @@
 
   </div>
 
-  <script>
-    lucide.createIcons();
-  </script>
+<!--/////////////////////
+Toast
+\\\\\\\\\\\\\\\\\\\\\\--> 
+  <div id="toast" class="toast">
+    <i data-lucide="check-circle" class="toast-icon"></i>
+    <span>Login Aprovado!</span>
+  </div>
+
+
+  <script src="dashboard/script.js"></script>
 </body>
 </html>

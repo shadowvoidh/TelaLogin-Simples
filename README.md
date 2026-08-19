@@ -1,34 +1,47 @@
-# 🔒 Tela de Login Simples
+# 🚀 Auth & Links Hub Web Application
 
-Uma interface moderna e responsiva de tela de login desenvolvida para praticar conceitos básicos de desenvolvimento web front-end.
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=github&logoColor=white)
 
-<p align="center">
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
-</p>
+Uma aplicação web moderna, responsiva e minimalista dividida em duas etapas principais: uma **Tela de Login** interativa com validações personalizadas e um **Hub de Links** em estilo *Glassmorphism* com tema claro e efeitos visuais modernos.
 
+---
 
-## 🚀 Tecnologias Utilizadas
+## 🎨 Demonstração & Recursos
 
-* **HTML5**: Estruturação semântica da página.
-* **CSS3**: Estilização moderna, uso de Flexbox/Grid e design responsivo.
+### 🔐 1. Tela de Login (`index.html`)
+- **Validação Personalizada:** Trata erros de e-mail e campos vazios com feedback visual elegante sem depender do balão nativo do navegador.
+- **Microinterações:** Botão de login dinâmico com estado de *loading* (spinner em animação CSS) e trava contra cliques múltiplos.
+- **Notificação Toast:** Alerta de "Login Aprovado" que desliza suavemente na tela antes do redirecionamento.
+- **Alternador de Senha:** Recurso para mostrar/ocultar a senha.
+- **Layout Adaptativo:** Painel duplo com ilustração no desktop que se transforma em coluna única no mobile.
 
+### 🌐 2. Hub de Links (`dashboard/dashboard.html`)
+- **Design Glassmorphism:** Cards translúcidos sobre um fundo claro com manchas roxas desfocadas (*glow blobs*).
+- **Ícones Sociais:** Links integrados para GitHub, Instagram, LinkedIn e repositórios.
+- **Totalmente Responsivo:** Layout fluido ajustado para smartphones, tablets e desktops.
 
-## 🎨 Funcionalidades
+---
 
-* Layout limpo dividido em duas seções (ilustração e formulário).
-* Campos estruturados para Gmail, Usuário e Senha.
-
-## 📂 Estrutura do Projeto
+## 📁 Estrutura do Projeto
 
 ```text
-├── index.html       # Estrutura principal da página
-├── RADME.md
-├
-└── assets/
-            style.css        # Estilos e design visual
-            img              # Imagens, ícones e favicons utilizados
+Tela-Login/
+├── assets/
+│   ├── style.css
+│   ├── avatar.jfif
+│   ├── shadow.jfif
+│   └── favicon.png
+├── dashboard/
+│   └── script.js
+│   └── dashboard.html
+│   
+├── index.html
+└── Readme.md
 ```
+
 
 ## 🛠️ Como Executar o Projeto
 
@@ -49,6 +62,7 @@ O projeto está hospedado e rodando online! Acesse o link abaixo para acessar ag
 
 
 ---
-Desenvolvido  por [Shadow_Voidh](https://github.com/shadowvoidh)
+Desenvolvido  por [Shadow_Voidh](https://github.com/shadowvoidh) 
+Instagram: @shadow_voidh
 
 
