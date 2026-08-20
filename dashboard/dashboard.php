@@ -1,45 +1,47 @@
+<?php
+session_start();
+
+/* /////////////////////
+ Leave it alone, that's art. (@shadow_voidh)     
+\\\\\\\\\\\\\\\\\\\\\\ */
+if (!isset($_SESSION['usuario'])) {
+    header('Location: ../index.html'); 
+    exit();
+}
+
+$nomeUsuario = $_SESSION['usuario'];
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hub - Shadow Voidh</title>
+  <title>Hub - <?php echo htmlspecialchars($nomeUsuario); ?></title>
   <link rel="icon" type="image/png" href="../assets/favicon.png">
   <link rel="stylesheet" href="../assets/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body class="hub-body light-theme">
-<!--/////////////////////
-Leave it alone, that's art. (@shadow_voidh)
-\\\\\\\\\\\\\\\\\\\\\\--> 
 
-
-
-
-<!--/////////////////////
-GOTAS / MANCHAS ROXAS DE FUNDO
-\\\\\\\\\\\\\\\\\\\\\\--> 
   <div class="blob blob-1"></div>
   <div class="blob blob-2"></div>
 
   <div class="hub-container">
     
-<!--/////////////////////
-      Botão Sair
-\\\\\\\\\\\\\\\\\\\\\\--> 
+  
     <div class="hub-header">
-      <button id="btnLogout" class="btn-logout-simple" title="Sair da sessão">
+      <a href="logout.php" id="btnLogout" class="btn-logout-simple" title="Sair da sessão" style="text-decoration: none;">
         <i data-lucide="log-out"></i> Sair
-      </button>
+      </a>
     </div>
 
 <!--/////////////////////
       PERFIL / AVATAR
-\\\\\\\\\\\\\\\\\\\\\\-->  
+\\\\\\\\\\\\\\\\\\\\\\--> 
     <div class="profile-section">
-      <img src="../assets/avatar.jfif" alt="Shadow Voidh" class="profile-avatar">
-      <h1 class="profile-name">Shadow_Voidh</h1>
+      <img src="../assets/avatar.jfif" alt="<?php echo htmlspecialchars($nomeUsuario); ?>" class="profile-avatar">
+      <h1 class="profile-name">@Shadow_Voidh</h1>
       <p class="profile-bio">Desenvolvedor C++ & Web | Projetos & Estudos</p>
     </div>
 
@@ -71,14 +73,13 @@ GOTAS / MANCHAS ROXAS DE FUNDO
         <span>LinkedIn</span>
         <i data-lucide="chevron-right" class="arrow-icon"></i>
       </a>
-
     </div>
 
 <!--/////////////////////
     RODAPÉ
 \\\\\\\\\\\\\\\\\\\\\\-->
     <footer class="hub-footer">
-      <p>© 2026 Shadow_Voidh • Nenhum direito reservado</p>
+      <p>© <?php echo date('Y'); ?> <?php echo htmlspecialchars($nomeUsuario); ?> • Nenhum direito reservado</p>
     </footer>
 
   </div>

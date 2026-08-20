@@ -57,44 +57,45 @@ Painel Direito
       <!-- User -->
       <h1 class="login-title">USER LOGIN</h1>
       <!-- Login -->
-      <form id="loginForm" class="login-form" novalidate>
-    <div class="input-group">
-    <!-- Gmail -->
-    <input type="email" id="emailInput" placeholder="Seu e-mail..." required>
+<form id="loginForm" class="login-form" action="login.php" method="POST" novalidate>
+  
+  <!-- Gmail -->
+  <div class="input-group">
+    <input type="email" id="emailInput" name="email" placeholder="Seu e-mail..." required>
     <span class="error-message" id="emailError"></span>
-     <i data-lucide="mail" class="input-icon"></i>
-    </div>
-    
-        <!-- CAMPO USERNAME -->
-        <div class="input-group">
-          <input type="text" placeholder="USERNAME" required>
-          <i data-lucide="user" class="input-icon"></i>
-        </div>
+    <i data-lucide="mail" class="input-icon"></i>
+  </div>
+  
+  <!-- CAMPO USERNAME -->
+  <div class="input-group">
+    <input type="text" id="usernameInput" name="username" placeholder="USERNAME" required>
+    <i data-lucide="user" class="input-icon"></i>
+  </div>
 
-        <!-- CAMPO PASSWORD -->
-        <div class="input-group">
-          <input type="password" id="passwordInput" placeholder="PASSWORD" required>
-          <button type="button" id="togglePassword" class="toggle-password-btn" aria-label="Mostrar senha">
-            <i data-lucide="eye" id="eyeIcon"></i>
-          </button>
-        </div>
+  <!-- CAMPO PASSWORD -->
+  <div class="input-group">
+    <input type="password" id="passwordInput" name="password" placeholder="PASSWORD" required>
+    <button type="button" id="togglePassword" class="toggle-password-btn" aria-label="Mostrar senha">
+      <i data-lucide="eye" id="eyeIcon"></i>
+    </button>
+  </div>
 
-        <!-- OPÇÕES -->
-        <div class="options-group">
-          <label class="radio-label">
-            <input type="checkbox" name="remember" checked>
-            <span class="custom-radio"></span>
-            Remember me
-          </label>
-        </div>
+  <!-- OPÇÕES -->
+  <div class="options-group">
+    <label class="radio-label">
+      <input type="checkbox" name="remember" checked>
+      <span class="custom-radio"></span>
+      Remember me
+    </label>
+  </div>
 
-        <!-- BOTÃO -->
-        <button type="submit" id="btnLogin" class="btn-login">
-  <span id="btnText">ENTRAR</span>
-  <i id="btnSpinner" data-lucide="loader-2" class="spinner-icon hidden"></i>
-      </button>
-      </form>
-
+  <!-- BOTÃO -->
+  <button type="submit" id="btnLogin" class="btn-login">
+    <span id="btnText">ENTRAR</span>
+    <i id="btnSpinner" data-lucide="loader-2" class="spinner-icon hidden"></i>
+  </button>
+  
+</form>
       <p class="copyright">© 2026 LOGIN WORLDWIDE DESIGN BY SHADOW_VOIDH.</p>
     </div>
 

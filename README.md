@@ -3,7 +3,8 @@
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=github&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
 Uma aplicação web moderna, responsiva e minimalista dividida em duas etapas principais: uma **Tela de Login** interativa com validações personalizadas e um **Hub de Links** em estilo *Glassmorphism* com tema claro e efeitos visuais modernos.
 
@@ -36,8 +37,10 @@ Tela-Login/
 │   └── favicon.png
 ├── dashboard/
 │   └── script.js
-│   └── dashboard.html
-│   
+│   └── dashboard.php
+│   └── logout.php
+│ 
+├── login.php
 ├── index.html
 └── Readme.md
 ```
@@ -47,17 +50,8 @@ Tela-Login/
 
 ### 🌐 1. Pelo Navegador (GitHub Pages)
 O projeto está hospedado e rodando online! Acesse o link abaixo para acessar agora mesmo:
-👉 **[CLIQUE AQUI PARA ACESSAR](https://shadowvoidh.github.io/TelaLogin-Simples/)**
+👉 **[CLIQUE AQUI PARA ACESSAR](ainda n)**
 
-### 💻 2. Executando Localmente
-
-
-1. Faça o clone deste repositório:
-   ```bash
-   git clone  https://github.com/shadowvoidh/TelaLogin-Simples.git
-   ```
-2. Navegue até a pasta do projeto.
-3. Abra o arquivo `index.html` diretamente no seu navegador ou utilize a extensão **Live Server** no VS Code.
 
 
 

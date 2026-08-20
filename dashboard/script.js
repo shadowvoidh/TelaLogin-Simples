@@ -1,5 +1,5 @@
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-  Leave it alone, that's art.(@shadow_voidh)
+  Leave it alone, that's art. (@shadow_voidh)
 ////////////////////////////////////////////*/
 
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -7,13 +7,12 @@ Lucide
 ////////////////////////////////////////////*/
 lucide.createIcons();
 
-
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-LOGIN COM ANIMAÇÃO DE LOADING
+LOGIN COM ANIMAÇÃO DE LOADING E PHP SUBMIT
 ////////////////////////////////////////////*/
 const loginForm = document.getElementById('loginForm');
-const emailInput = document.getElementById('emailInput'); // ajuste o ID se o seu for diferente
-const passwordInput = document.getElementById('passwordInput'); // ajuste o ID se o seu for diferente
+const emailInput = document.getElementById('emailInput');
+const passwordInput = document.getElementById('passwordInput');
 const emailError = document.getElementById('emailError');
 
 const btnLogin = document.getElementById('btnLogin');
@@ -42,7 +41,6 @@ if (loginForm) {
 
     // --- VALIDAÇÃO DA SENHA ---
     if (!passwordInput || !passwordInput.value.trim()) {
-      // Se tiver uma span de erro pra senha, pode usar aqui, ou focar no campo
       if (passwordInput) passwordInput.classList.add('input-error');
       isValid = false;
     }
@@ -50,18 +48,17 @@ if (loginForm) {
     if (!isValid) {
       return; 
     }
-    
 
+    // --- ANIMAÇÃO DE LOADING ---
     if (btnLogin) btnLogin.disabled = true;
     if (btnText) btnText.classList.add('hidden');
     if (btnSpinner) btnSpinner.classList.remove('hidden');
-
 
     if (toast) toast.classList.add('show');
 
 
     setTimeout(() => {
-      window.location.href = 'dashboard/dashboard.html';
+      loginForm.submit(); 
     }, 1500);
   });
 }
@@ -75,6 +72,7 @@ function showError(message) {
     emailError.textContent = message;
   }
 }
+
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 Sair do Dashboard
 ////////////////////////////////////////////*/
@@ -82,8 +80,6 @@ const btnLogout = document.getElementById('btnLogout');
 
 if (btnLogout) {
   btnLogout.addEventListener('click', () => {
-    window.location.href = '../index.html';
+    window.location.href = 'logout.php'; // Redireciona para o PHP destruir a sessão
   });
 }
-
-
