@@ -4,7 +4,7 @@
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+
 
 Uma aplicação web moderna, responsiva e minimalista dividida em duas etapas principais: uma **Tela de Login** interativa com validações personalizadas e um **Hub de Links** em estilo *Glassmorphism* com tema claro e efeitos visuais modernos.
 
@@ -50,7 +50,7 @@ Tela-Login/
 
 ### 🌐 1. Pelo Navegador (GitHub Pages)
 O projeto está hospedado e rodando online! Acesse o link abaixo para acessar agora mesmo:
-👉 **[CLIQUE AQUI PARA ACESSAR](ainda n)**
+👉 **[CLIQUE AQUI PARA ACESSAR](https://telalogin.infinityfree.me/)**
 
 
 
