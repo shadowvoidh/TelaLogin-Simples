@@ -1,10 +1,13 @@
+ **[PT-BR ]** |   **[[ENG 🇺🇸 ]](README.en.md)**
+
+---
+
 # 🚀 Auth & Links Hub Web Application
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
-
 
 Uma aplicação web moderna, responsiva e minimalista dividida em duas etapas principais: uma **Tela de Login** interativa com validações personalizadas e um **Hub de Links** em estilo *Glassmorphism* com tema claro e efeitos visuais modernos.
 
@@ -36,19 +39,18 @@ Tela-Login/
 │   ├── shadow.jfif
 │   └── favicon.png
 ├── dashboard/
-│   └── script.js
-│   └── dashboard.php
+│   ├── script.js
+│   ├── dashboard.php
 │   └── logout.php
-│ 
 ├── login.php
 ├── index.html
-└── Readme.md
-```
+└── README.md
 
+```
 
 ## 🛠️ Como Executar o Projeto
 
-### 🌐 1. Pelo Navegador (GitHub Pages)
+### 🌐 1. Pelo Navegador 
 O projeto está hospedado e rodando online! Acesse o link abaixo para acessar agora mesmo:
 👉 **[CLIQUE AQUI PARA ACESSAR](https://telalogin.infinityfree.me/)**
 
@@ -56,7 +58,6 @@ O projeto está hospedado e rodando online! Acesse o link abaixo para acessar ag
 
 
 ---
-Desenvolvido  por [Shadow_Voidh](https://github.com/shadowvoidh) 
+Desenvolvido  por [Shadow_Voidh](https://github.com/shadowvoidh) <br>
 Instagram: @shadow_voidh
-
 
