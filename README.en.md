@@ -58,5 +58,20 @@ The project is hosted and running live! Click the link below to access it right 
 
 
 ---
-Developed by [Shadow_Voidh](https://github.com/shadowvoidh) <br>
-Instagram: @shadow_voidh
+## 🌘Author
+
+* *Shadow_Voidh* - (https://github.com/shadowvoidh)
+
+
+
+## 📬 Contact
+
+* *GitHub:* [@shadowvoidh](https://github.com/shadowvoidh)
+
+* *Instagram:* [@shadow_voidh](https://www.instagram.com/shadow_voidh/)
+
+* *LinkedIn:* [Pedro Carnio](https://linkedin.com/in/pedrocarnio)
+
+* *Discord:* shadow_voidh
+
+* *E-mail:* shadow.voidh@gmail.com
